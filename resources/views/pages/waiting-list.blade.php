@@ -29,9 +29,9 @@
             </p>
 
             @if(session('message'))
-            <p class="mt-3 text-2xl text-emerald-300">{{session('message', 'Thanks you for registering with us')}}</p>
+            <p class="mt-3 text-2xl text-emerald-300">{{session('message')}}</p>
             @else
-            <form class="mt-4 group flex gap-3 justify-center" action="{{ route('register.contact') }}" method="post">
+            <form class="mt-4 group flex gap-3 justify-center" action="{{ route('register') }}" method="post">
                 @csrf
 
                 <input name="email" type="email" required
