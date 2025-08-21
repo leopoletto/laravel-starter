@@ -3,34 +3,32 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactCreated extends Mailable
+class ConfirmSubscriptionMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(public string $verifyUrl)
     {
-        //
     }
+
 
     /**
      * Get the message envelope.
      */
-    public function envelope(): Envelope
+    public function build(): self
     {
-        return new Envelope(
-            from: new Address('hello@updates.leopoletto.dev', 'Leonardo Poletto'),
-            subject: 'Thanks you for registering with us',
-        );
+        return $this->markdown('mail.subscription.confirm')
+            ->subject('Confirm your WizardCompass early access')
+            ->with(['verifyUrl' => $this->verifyUrl])
+            ->from(new Address('hello@updates.leopoletto.dev', 'Leonardo Poletto'));
     }
 
     /**
@@ -39,7 +37,7 @@ class ContactCreated extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mails.contact-created',
+            markdown: 'mail.subscription.confirm',
         );
     }
 

@@ -9,7 +9,8 @@ use Resend\Client;
 
 Route::middleware(SecurityHeaders::class)->group(function () {
     Route::get('/', [WaitingListController::class, 'show'])->name('waiting-list');
-    Route::post('/register', [WaitingListController::class, 'store'])->name('register');
+    Route::post('/subscriber/register', [WaitingListController::class, 'store'])->name('subscriber.register');
+    Route::get('/subscriber/verify/{token}', [WaitingListController::class, 'verify'])->name('subscriber.verify');
 })->middleware('throttle:60,1');
 
 Route::post('/csp-report', function (Request $request) {

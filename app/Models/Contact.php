@@ -16,7 +16,8 @@ class Contact extends Model
         'unsubscribed',
         'audience_id',
         'resend_id',
-        'confirmed_at',
+        'verify_token',
+        'verified_at',
         'unsubscribed_at',
     ];
 
@@ -26,7 +27,7 @@ class Contact extends Model
             'unsubscribed' => 'boolean',
             'audience_id' => 'string',
             'resend_id' => 'string',
-            'confirmed_at' => 'datetime',
+            'verified_at' => 'datetime',
             'unsubscribed_at' => 'datetime',
         ];
     }

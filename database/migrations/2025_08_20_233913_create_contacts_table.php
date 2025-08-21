@@ -15,7 +15,8 @@ return new class extends Migration {
             $table->boolean('unsubscribed');
             $table->uuid('audience_id');
             $table->uuid('resend_id')->nullable();
-            $table->dateTime('confirmed_at')->nullable();
+            $table->string('verify_token')->nullable();
+            $table->dateTime('verified_at')->nullable();
             $table->dateTime('unsubscribed_at')->nullable();
             $table->timestamps();
         });
