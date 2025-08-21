@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-
+@import './fonts.css';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
@@ -12,9 +12,8 @@
 }
 
 @theme {
-    --font-sans: "Inter", sans-serif;
+    --font-sans: 'Inter', 'Inter-iOS-Fallback', 'Inter-android-Fallback', 'Inter-windows-Fallback', 'Inter-macOS-Fallback', 'Inter-linux-Fallback', sans-serif;
     --font-headline: "Mozilla Headline", serif;
-    --font-mono: "Google Sans Code", serif;
 
     --color-white-smoke: #f5f5f5;
     --color-white-smoke-100: #313131;

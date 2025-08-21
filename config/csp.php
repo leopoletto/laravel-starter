@@ -11,8 +11,7 @@ return [
      * any class that implements `Spatie\Csp\Preset`
      */
     'presets' => [
-        WizardPreset::class,
-        GoogleFonts::class,
+        WizardPreset::class
     ],
 
     /**
