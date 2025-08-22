@@ -26,6 +26,10 @@
 @foreach(config('seo.meta') as $property => $content)
     <meta property="{{$property}}" content="{{$content}}"/>
 @endforeach
+
+    <script defer data-domain="wizardcompass.com" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
     @vite(["resources/js/app.js", "resources/css/app.css"])
 </head>
 <body class="min-h-screen overflow-auto">

@@ -3,6 +3,7 @@
 use App\Http\Csp\WizardPreset;
 use App\Support\LaravelViteNonceGenerator;
 use Spatie\Csp\Presets\GoogleFonts;
+use Spatie\Csp\Presets\PlausibleAnalytics;
 
 return [
 
@@ -11,7 +12,8 @@ return [
      * any class that implements `Spatie\Csp\Preset`
      */
     'presets' => [
-        WizardPreset::class
+        WizardPreset::class,
+        PlausibleAnalytics::class,
     ],
 
     /**
