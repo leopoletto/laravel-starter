@@ -2,7 +2,6 @@
 
 use App\Http\Csp\WizardPreset;
 use App\Support\LaravelViteNonceGenerator;
-use Spatie\Csp\Presets\GoogleFonts;
 use Spatie\Csp\Presets\PlausibleAnalytics;
 
 return [
