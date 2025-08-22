@@ -21,7 +21,7 @@ class WizardPreset implements Preset
             ->addNonce(Directive::STYLE)
             ->add(Directive::FORM_ACTION, [Keyword::SELF])
             ->add(Directive::FONT, [Keyword::SELF])
-            ->add(Directive::SCRIPT, [Keyword::STRICT_DYNAMIC])
+            ->add(Directive::SCRIPT, [Keyword::SELF, 'https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js'])
             ->addNonce(Directive::SCRIPT)
             ->add(Directive::FRAME_ANCESTORS, [Keyword::NONE])
             ->add(Directive::MEDIA, [Keyword::SELF])
