@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="{{ config('seo.description') }}"/>
     <meta name="author" content="{{ config('seo.author')  }}"/>
-    <link rel="canonical" href="{{ config('seo.canonical') }}"/>
+    <link rel="canonical" href="{{ request()->fullUrl() }}"/>
 
     <script type="application/ld+json">@json(config('seo.schema'))</script>
 
