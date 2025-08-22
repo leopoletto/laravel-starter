@@ -228,6 +228,85 @@
 }
 
 /*
+* Mozilla Headline iOS Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-iOS-Fallback';
+    src: local('SF Pro Display'), local('SFProDisplay-Black');
+    ascent-override: 99.25%;
+    descent-override: 105.72%;
+    size-adjust: 85.62%;
+    line-gap-override: normal;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline android Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-android-Fallback';
+    src: local('Roboto'), local('Roboto-Bold');
+    ascent-override: 126%;
+    descent-override: 102%;
+    size-adjust: 92.23%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline windows Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-windows-Fallback';
+    src: local('Tahoma'), local('Tahoma-Bold');
+    ascent-override: 123.59%;
+    descent-override: 123.46%;
+    size-adjust: 104.96%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline macOS Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-macOS-Fallback';
+    src: local('Helvetica'), local('Helvetica-Bold');
+    ascent-override: 126%;
+    descent-override: 150.07%;
+    size-adjust: 85.42%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline linux Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-linux-Fallback';
+    src: local('Tahoma'), local('Tahoma-Bold');
+    ascent-override: 123.59%;
+    descent-override: 123.46%;
+    size-adjust: 104.96%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
 * Main font: Inter-Regular
 */
 @font-face {

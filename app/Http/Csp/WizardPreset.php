@@ -23,6 +23,7 @@ class WizardPreset implements Preset
             ->add(Directive::FONT, [Keyword::SELF])
             ->add(Directive::SCRIPT, [Keyword::STRICT_DYNAMIC])
             ->addNonce(Directive::SCRIPT)
+            ->add(Directive::FRAME_ANCESTORS, [Keyword::NONE])
             ->add(Directive::MEDIA, [Keyword::SELF])
             ->add(Directive::MANIFEST, [Keyword::SELF])
             ->add(Directive::UPGRADE_INSECURE_REQUESTS, Value::NO_VALUE)

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => config('app.name'),
-    'description' => config('app.description'),
-    'canonical' => config('app.url'),
+    'name' => config('app.name'),
+    'title' => 'Wizard Compass — Course on Web Audits, Fonts & Privacy',
+    'description' => 'Learn how to audit fonts, validate CSP, and build privacy-first websites. Wizard Compass is a hands-on course with open tools and practical guidance.',
     'author' => 'Leonardo Poletto',
     'url' => config('app.url'),
 
@@ -20,7 +20,7 @@ return [
         '@type' => 'WebSite',
         'name' => config('app.name'),
         'url' => config('app.url'),
-        'description' => config('app.description'),
+        'description' => 'Learn how to audit fonts, validate CSP, and build privacy-first websites. Wizard Compass is a hands-on course with open tools and practical guidance.',
     ],
 
     /*
@@ -33,12 +33,12 @@ return [
     |
     */
     'opengraph' => [
-        'title' => config('app.name'),
+        'title' => 'Wizard Compass — Learn Web Audits & Fonts in Practice',
         'type' => 'website',
         'url' => config('app.url'),
         'image' => fn() => asset('og.webp'),
         'image:alt' => fn() => asset('og.webp'),
-        'description' => config('app.description'),
+        'description' => 'A practical course for developers: font auditing, CSP validation, accessibility checks, and privacy tools. Build better websites with hands-on guidance.',
         'locale' => 'en-US',
     ],
 
@@ -54,8 +54,8 @@ return [
         'card' => 'summary_large_image',
         'site' => config('app.url'),
         'creator' => '@leopoletto',
-        'title' => config('app.name'),
-        'description' => config('app.description'),
+        'title' => 'Wizard Compass — Practical Course for Web Audits & Fonts',
+        'description' => 'Step-by-step learning on fonts, privacy, and performance. Wizard Compass is your lab to experiment and master web audits.',
         'image' => fn() => asset('og.webp'),
         'image:alt' => fn() => asset('og.webp'),
     ],

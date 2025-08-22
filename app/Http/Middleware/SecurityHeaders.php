@@ -19,8 +19,6 @@ class SecurityHeaders
         $request->headers->set('Cross-Origin-Opener-Policy', 'same-origin');
         $request->headers->set('X-Permitted-Cross-Domain-Policies', 'none');
         $request->headers->set('X-Download-Options', 'noopen');
-        $request->headers->set('X-Powered-By', 'WizardCompass');
-        $request->headers->set('Server', 'WizardServer');
 
         return $next($request);
     }
