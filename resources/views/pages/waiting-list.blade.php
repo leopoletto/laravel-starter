@@ -23,9 +23,9 @@
                 </nav>
             </header>
 
-            <h1 class="text-4xl sm:text-5xl mt-10 font-headline font-semibold leading-[118%] tracking-tight ">
+            <h1 class="bg-emerald-900 sm:bg-transparent text-4xl sm:text-5xl mt-10 font-headline font-semibold leading-[118%] tracking-tight ">
                 <span class="text-emerald-900  bg-emerald-200 px-1">Interactive Lighthouse audits,</span>
-                <br>
+                <br class="hidden sm:flex">
                 <span class="bg-emerald-900 text-emerald-200 px-1 pb-1">explained by experts</span>
             </h1>
             @if(!$verified && !$pending)
