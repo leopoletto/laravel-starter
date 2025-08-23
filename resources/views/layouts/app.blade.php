@@ -27,12 +27,15 @@
         <meta property="{{$property}}" content="{{$content}}"/>
     @endforeach
 
-    <link rel="preconnect" href="https://cdn.fontlint.com">
-    <link href="https://cdn.fontlint.com/wizardcompass/mozilla-headline.css" rel="stylesheet">
-    <link href="https://cdn.fontlint.com/wizardcompass/inter.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fon.nyc3.digitaloceanspaces.com">
+    <link href="https://fon.nyc3.digitaloceanspaces.com/wizardcompass/mozilla-headline.css" rel="stylesheet">
+    <link href="https://fon.nyc3.digitaloceanspaces.com/wizardcompass/inter.css" rel="stylesheet">
 
+    @production
         <script defer data-domain="wizardcompass.com"
                 src="https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js"></script>
+    @endproduction
+
     @vite(["resources/js/app.js", "resources/css/app.css"])
 </head>
 <body class="min-h-screen overflow-auto">
