@@ -27,10 +27,6 @@
         <meta property="{{$property}}" content="{{$content}}"/>
     @endforeach
 
-    <link rel="preconnect" href="https://fon.nyc3.digitaloceanspaces.com">
-    <link href="https://fon.nyc3.digitaloceanspaces.com/wizardcompass/mozilla-headline.css" rel="stylesheet">
-    <link href="https://fon.nyc3.digitaloceanspaces.com/wizardcompass/inter.css" rel="stylesheet">
-
     @production
         <script defer data-domain="wizardcompass.com"
                 src="https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js"></script>

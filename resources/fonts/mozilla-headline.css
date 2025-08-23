@@ -1,0 +1,105 @@
+/*
+* Mozilla Headline iOS Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-iOS-Fallback';
+    src: local('SF Pro Display'), local('SFProDisplay-Black');
+    ascent-override: 99.25%;
+    descent-override: 105.72%;
+    size-adjust: 85.62%;
+    line-gap-override: normal;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline android Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-android-Fallback';
+    src: local('Roboto'), local('Roboto-Bold');
+    ascent-override: 126%;
+    descent-override: 102%;
+    size-adjust: 92.23%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline windows Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-windows-Fallback';
+    src: local('Tahoma'), local('Tahoma-Bold');
+    ascent-override: 123.59%;
+    descent-override: 123.46%;
+    size-adjust: 104.96%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline macOS Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-macOS-Fallback';
+    src: local('Helvetica'), local('Helvetica-Bold');
+    ascent-override: 126%;
+    descent-override: 150.07%;
+    size-adjust: 85.42%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*
+* Mozilla Headline linux Fallback - Weight: 700, Style: normal
+* Subsets: latin-ext, latin
+*/
+@font-face {
+    font-family: 'Mozilla Headline-linux-Fallback';
+    src: local('Tahoma'), local('Tahoma-Bold');
+    ascent-override: 123.59%;
+    descent-override: 123.46%;
+    size-adjust: 104.96%;
+    line-gap-override: 0%;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
+* Subset: latin-ext
+* Main font: MozillaHeadline-Bold
+*/
+@font-face {
+    font-family: 'Mozilla Headline';
+    src: url('MozillaHeadline-Bold.woff2') format('woff2'),
+    url('MozillaHeadline-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/*
+* Subset: latin
+* Main font: MozillaHeadline-Bold
+*/
+@font-face {
+    font-family: 'Mozilla Headline';
+    src: url('MozillaHeadline-Bold.woff2') format('woff2'),
+    url('MozillaHeadline-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

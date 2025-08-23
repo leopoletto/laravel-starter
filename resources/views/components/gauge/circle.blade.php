@@ -37,7 +37,7 @@
         >
             <em
                 @class([
-                    "score-number font-headline text-3xl not-italic tabular-nums",
+                    "score-number font-bold font-headline text-3xl not-italic tabular-nums",
                 ])
             >
                 {{ $score }}
